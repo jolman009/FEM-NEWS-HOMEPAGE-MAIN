@@ -1,0 +1,34 @@
+@use 'util' as u;
+
+:root {
+--Off-white: hsl(36, 100%, 99%)
+--Grayish-blue: hsl(233, 8%, 79%)
+--Dark-grayish-blue: hsl(236, 13%, 42%)
+--Very-dark-blue: hsl(240, 100%, 5%)
+--Soft-orange: hsl(35, 77%, 62%)
+--Soft-red: hsl(5, 85%, 63%)
+--f-xl: clamp(
+u.rem(40),  
+2.147887323943662rem + 1.5023474178403755vw,
+u.rem(56)
+); 
+--f-l: clamp(
+u.rem(32), 
+1.823943661971831rem + 0.7511737089201878vw, 
+u.rem(40)
+); 
+--f-m: u.rem(32);
+--f-s: u.rem(20); 
+--f-xs: u.rem(18); 
+--f-bosy: u.rem(15);
+}
+
+
+::after
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family:  "Inter", sans-serif;
+    line-height: 1.5;
+}
